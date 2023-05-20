@@ -13,7 +13,7 @@
     "url": "https://squid-app-iglsx.ondigitalocean.app/.well-known/openapi.yaml",
     "has_user_authentication": false
   },
-  "logo_url": "https://squid-app-iglsx.ondigitalocean.app/.well-known/logo.png",
-  "contact_email": "mndlovuca@gmail.com",
+  "logo_url": "https://your-app-url.com/.well-known/logo.png",
+  "contact_email": "hello@contact.com", 
   "legal_info_url": "hello@legal.com"
 }
