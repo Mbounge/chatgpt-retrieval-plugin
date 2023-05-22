@@ -1,11 +1,22 @@
 openapi: 3.0.2
 info:
-  title: Retrieval Plugin API
-  description: A retrieval API for querying and filtering documents based on natural language queries and metadata
+  title: Olyup API
+  description: A plugin that allows ChatGPT to answer sport performance tasks, such as athlete-question-answering, sport-team-question-answering, sport-event-question-answering, athlete-to-competition-comparison-question-answering, sport-team-to-competition-comparison-question-answering, olympic-weightlifting-training-program-creator.
   version: 1.0.0
   servers:
     - url: http://localhost:3333
 paths:
+  /olyup/:
+    get:
+      operationId: getTasks
+      summary: Give ChatGPT the instructions needed to answer sport performance tasks.
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/getTasksResponse'
   /query:
     post:
       summary: Query
@@ -32,6 +43,12 @@ paths:
                 $ref: "#/components/schemas/HTTPValidationError"
 components:
   schemas:
+    getTasksResponse:
+      type: object
+      properties:
+        todos:
+          type: string
+          description: The sport performance instruction set to give ChatGPT, to make it able to answer questions related to sport performance.
     DocumentChunkMetadata:
       title: DocumentChunkMetadata
       type: object
