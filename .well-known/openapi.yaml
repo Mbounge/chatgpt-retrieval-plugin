@@ -2,13 +2,24 @@ openapi: 3.0.0
 info:
   title: Olyup API
   version: 1.0.0
-  description: This API lets you search for olympic weightlifting training programs
+  description: A plugin that allows ChatGPT to answer sport performance tasks, such as athlete-question-answering, sport-team-question-answering, sport-event-question-answering, athlete-to-competition-comparison-question-answering, sport-team-to-competition-comparison-question-answering, olympic-weightlifting-training-program-creator.
 servers:
   - url: https://squid-app-iglsx.ondigitalocean.app
 paths:
+  /olyup/:
+    get:
+      operationId: getTasks
+      summary: Give ChatGPT the instructions needed to answer sport performance tasks.
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/getTasksResponse'
   /query:
     post:
-      summary: Query
+      summary: Query for an olympic weightlifting training program and its description. Analyze and understand the description and then extract and give the training program to the user.
       operationId: query_query_post
       requestBody:
         content:
@@ -33,6 +44,12 @@ paths:
         - HTTPBearer: []
 components:
   schemas:
+    getTasksResponse:
+      type: object
+      properties:
+        todos:
+          type: string
+          description: The sport performance instruction set to give ChatGPT, to make it able to answer questions related to sport performance.
     Document:
       required:
         - text

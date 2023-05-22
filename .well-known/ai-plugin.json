@@ -2,8 +2,8 @@
   "schema_version": "v1",
   "name_for_model": "Olyup_db",
   "name_for_human": "Olyup Plugin",
-  "description_for_model": "Use this tool to get up to date training programs for the sport of olympic weightlifting. Do not use this tool, if the user did not ask about training programs for olympic weightlifting.",
-  "description_for_human": "Up to date training programs for the sport of olympic weightliting.",
+  "description_for_model": "Plugin that gives you the ability to answer questions related to sport performance. You will be able to get a set of instructions that will give you the ability to answer the following sport performance tasks: athlete-question-answering, sport-team-question-answering, sport-event-question-answering, athlete-to-competition-comparison-question-answering, sport-team-to-competition-comparison-question-answering. Creating training programs for olympic weightlifting - for this task you will be given the training program and a description of the training program together. I want you to analyze the entire description of the training and then extract the training program and give it to the user.",
+  "description_for_human": "Plugin for answering questions related to sport performance.",
   "auth": {
     "type": "user_http",
     "authorization_type": "bearer"
