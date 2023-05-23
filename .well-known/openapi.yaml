@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
-  title: Olyup API
-  version: 1.0.0
+  title: Olyup
+  version: 1.0.1
   description: A plugin that allows ChatGPT to answer sport performance tasks, such as athlete-question-answering, sport-team-question-answering, sport-event-question-answering, athlete-to-competition-comparison-question-answering, sport-team-to-competition-comparison-question-answering, olympic-weightlifting-training-program-creator.
 servers:
   - url: https://squid-app-iglsx.ondigitalocean.app

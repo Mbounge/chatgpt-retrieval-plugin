@@ -34,10 +34,10 @@ app.mount("/.well-known", StaticFiles(directory=".well-known"), name="static")
 
 # Create a sub-application, in order to access just the query endpoint in an OpenAPI schema, found at http://0.0.0.0:8000/sub/openapi.json when the app is running locally
 sub_app = FastAPI(
-    title="Retrieval Plugin API",
-    description="A retrieval API for querying and filtering documents based on natural language queries and metadata",
-    version="1.0.0",
-    servers=[{"url": "https://your-app-url.com"}],
+    title="Olyup Plugin",
+    description="A plugin that allows ChatGPT to answer sport performance tasks, such as athlete-question-answering, sport-team-question-answering, sport-event-question-answering, athlete-to-competition-comparison-question-answering, sport-team-to-competition-comparison-question-answering, olympic-weightlifting-training-program-creator.",
+    version="1.0.1",
+    servers=[{"url": "https://squid-app-iglsx.ondigitalocean.app"}],
     dependencies=[Depends(validate_token)],
 )
 app.mount("/sub", sub_app)

@@ -1,6 +1,6 @@
 {
   "schema_version": "v1",
-  "name_for_model": "Olyup_db",
+  "name_for_model": "Olyup Plugin",
   "name_for_human": "Olyup Plugin",
   "description_for_model": "Plugin that gives you the ability to answer questions related to sport performance. You will be able to get a set of instructions that will give you the ability to answer the following sport performance tasks: athlete-question-answering, sport-team-question-answering, sport-event-question-answering, athlete-to-competition-comparison-question-answering, sport-team-to-competition-comparison-question-answering. Creating training programs for olympic weightlifting - for this task you will be given the training program and a description of the training program together. I want you to analyze the entire description of the training and then extract the training program and give it to the user.",
   "description_for_human": "Plugin for answering questions related to sport performance.",
@@ -13,7 +13,7 @@
     "url": "https://squid-app-iglsx.ondigitalocean.app/.well-known/openapi.yaml",
     "has_user_authentication": false
   },
-  "logo_url": "https://your-app-url.com/.well-known/logo.png",
+  "logo_url": "https://squid-app-iglsx.ondigitalocean.app/.well-known/logo.png",
   "contact_email": "hello@contact.com", 
   "legal_info_url": "hello@legal.com"
 }

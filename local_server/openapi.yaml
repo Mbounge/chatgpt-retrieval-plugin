@@ -1,10 +1,10 @@
 openapi: 3.0.2
 info:
-  title: Olyup API
+  title: Olyup
   description: A plugin that allows ChatGPT to answer sport performance tasks, such as athlete-question-answering, sport-team-question-answering, sport-event-question-answering, athlete-to-competition-comparison-question-answering, sport-team-to-competition-comparison-question-answering, olympic-weightlifting-training-program-creator.
-  version: 1.0.0
+  version: 1.0.1
   servers:
-    - url: http://localhost:3333
+    - url: http://localhost:3335
 paths:
   /olyup/:
     get:
